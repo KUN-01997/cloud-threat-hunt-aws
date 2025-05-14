@@ -5,7 +5,7 @@ This repository contains a cloud-hosted threat detection lab built using Wazuh 4
 The project leverages AWS EC2 instances—one acting as the Wazuh manager and another as the monitored endpoint running the Wazuh agent. Simulated attacks are executed using lightweight Atomic Red Team–style scripts, which trigger custom Wazuh detection rules mapped directly to specific MITRE techniques.
 
 
---
+---
 
 
 ## 🎯 Lab Objectives
@@ -31,7 +31,7 @@ This cloud-hosted detection lab is designed to build practical SOC analyst skill
   Track which MITRE techniques were tested and detected, and identify gaps to improve rule logic.
 
 
---
+---
 
 
 ## 🧰 Tooling
@@ -45,7 +45,7 @@ This cloud-hosted detection lab is designed to build practical SOC analyst skill
 | Visualization       | Wazuh 4.12 MITRE ATT&CK                |
 
 
---
+---
 
 
 ## ⚙️ Lab Architecture
@@ -56,7 +56,7 @@ This cloud-hosted detection lab is designed to build practical SOC analyst skill
 - **Dashboard**: Accessible via HTTPS on port 443 with full MITRE mapping
 
 
---
+---
 
 
 ## 🧪 Simulated Techniques
@@ -70,7 +70,7 @@ This cloud-hosted detection lab is designed to build practical SOC analyst skill
 | T1053.003    | Scheduled Task via Cron        | `echo '* * * * * root echo hello' > /etc/cron.d`|
 
 
---
+---
 
 
 ## 📊 Detection Workflow
@@ -83,7 +83,7 @@ This cloud-hosted detection lab is designed to build practical SOC analyst skill
    - MITRE ATT&CK matrix (tactic → technique)
 
 
---
+---
 
 
 ## 📁 Repo Contents
@@ -98,7 +98,7 @@ wazuh-threat-hunting-lab/
 ```
 
 
---
+---
 
 
 ## 📸 Screenshots
@@ -110,7 +110,7 @@ wazuh-threat-hunting-lab/
 | `event-details.png`     | Detailed alert with MITRE technique, rule ID     |
 | `mitre-matrix.png`      | Highlighted MITRE techniques based on detections |
 
---
+---
 
 
 ## ✅ Requirements
@@ -121,7 +121,7 @@ wazuh-threat-hunting-lab/
 - Dashboard accessible from your IP
 
 
---
+---
 
 
 ## 🧠 Skills Demonstrated
