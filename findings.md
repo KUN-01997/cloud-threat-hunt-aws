@@ -1,4 +1,4 @@
-# 🧠 MITRE Technique Detection Findings
+# MITRE Technique Detection Findings
 
 ## Agent Info
 - Hostname: ubuntu-agent
