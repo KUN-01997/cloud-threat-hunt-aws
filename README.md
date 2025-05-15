@@ -1,4 +1,4 @@
-# 🔍 MITRE ATT&CK–Driven Cloud Based Threat Detection Using Wazuh
+# MITRE ATT&CK–Driven Cloud Based Threat Detection Using Wazuh
 
 This repository contains a cloud-hosted threat detection lab built using Wazuh 4.12, designed to emulate real-world attacker behaviors in a controlled environment. The lab simulates adversarial techniques based on the MITRE ATT&CK framework, enabling hands-on experience with threat detection, rule customization, and alert analysis.
 
@@ -8,33 +8,33 @@ The project leverages AWS EC2 instances—one acting as the Wazuh manager and an
 ---
 
 
-## 🎯 Lab Objectives
+## Lab Objectives
 
 This cloud-hosted detection lab is designed to build practical SOC analyst skills by simulating adversary behaviors and detecting them using the Wazuh SIEM platform. The key objectives of the lab include:
 
-- ✅ **Deploy a Cloud-Based Detection Environment**  
+- **Deploy a Cloud-Based Detection Environment**  
   Set up Wazuh 4.12 on AWS EC2 instances to simulate a real-world security operations center (SOC).
 
-- 🔍 **Simulate MITRE ATT&CK Techniques**  
+-  **Simulate MITRE ATT&CK Techniques**  
   Use Atomic Red Team tests to simulate tactics and techniques from the MITRE ATT&CK framework across categories like Execution, Privilege Escalation, and Discovery.
 
-- 🛡️ **Write Custom Detection Rules**  
+-  **Write Custom Detection Rules**  
   Develop Wazuh local rules to detect Atomic tests in log sources such as `/var/log/syslog`, `auth.log`, and `journald`.
 
-- 🚨 **Trigger and Validate Alerts**  
+-  **Trigger and Validate Alerts**  
   Ensure each simulated attack triggers a corresponding alert in the Wazuh dashboard, verifying detection coverage.
 
-- 📈 **Build Detection Engineering Workflow**  
+- **Build Detection Engineering Workflow**  
   Gain hands-on experience with detection tuning, alert validation, and rule mapping in a cloud-hosted lab that mirrors enterprise SOC processes.
 
-- 📚 **Document Detection Coverage**  
+- **Document Detection Coverage**  
   Track which MITRE techniques were tested and detected, and identify gaps to improve rule logic.
 
 
 ---
 
 
-## 🧰 Tooling
+##  Tooling
 
 | Category            | Tools Used                            |
 |---------------------|----------------------------------------|
@@ -48,7 +48,7 @@ This cloud-hosted detection lab is designed to build practical SOC analyst skill
 ---
 
 
-## ⚙️ Lab Architecture
+## Lab Architecture
 
 - **Wazuh Manager (Ubuntu 22.04)**: Self-hosted, runs the Wazuh server, indexer, and dashboard
 - **Wazuh Agent (Ubuntu 22.04)**: Logs real terminal commands, forwards syslog/auth.log entries
@@ -59,7 +59,7 @@ This cloud-hosted detection lab is designed to build practical SOC analyst skill
 ---
 
 
-## 🧪 Simulated Techniques
+## Simulated Techniques
 
 | MITRE ID     | Technique                      | Example Command                                 |
 |--------------|--------------------------------|--------------------------------------------------|
@@ -73,7 +73,7 @@ This cloud-hosted detection lab is designed to build practical SOC analyst skill
 ---
 
 
-## 📊 Detection Workflow
+## Detection Workflow
 1. Terminal commands executed on the agent (Ubuntu)
 2. Log entries created in `syslog` and `auth.log`
 3. Wazuh Agent forwards logs to the Manager
@@ -86,7 +86,7 @@ This cloud-hosted detection lab is designed to build practical SOC analyst skill
 ---
 
 
-## 📁 Repo Contents
+## Repo Contents
 
 ```
 wazuh-threat-hunting-lab/
@@ -101,7 +101,7 @@ wazuh-threat-hunting-lab/
 ---
 
 
-## 📸 Screenshots
+## Screenshots
 
 | File                    | Description                                      |
 |-------------------------|--------------------------------------------------|
@@ -113,7 +113,7 @@ wazuh-threat-hunting-lab/
 ---
 
 
-## ✅ Requirements
+## Requirements
 
 - AWS EC2 (Ubuntu 22.04 for both manager and agent)
 - Ports open: 1514/tcp, 55000/tcp, 443/tcp, 22/tcp
@@ -124,7 +124,7 @@ wazuh-threat-hunting-lab/
 ---
 
 
-## 🧠 Skills Demonstrated
+## Skills Demonstrated
 - Wazuh rule writing & MITRE ATT&CK mapping
 - Log-based detection engineering
 - Cloud SIEM simulation
